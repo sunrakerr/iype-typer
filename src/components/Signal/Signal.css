@@ -1,0 +1,62 @@
+.ring {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+}
+.start {
+  background-color: rgb(62, 211, 62);
+}
+
+.stop {
+  background-color: rgb(251, 95, 95);
+}
+
+.eye {
+  background: white;
+  height: 120px;
+  width: 120px;
+  transform: rotate(45deg);
+  border-radius: 50% 50%;
+  overflow: hidden;
+  /* border: 1px solid #a3774d; */
+  box-shadow: #eeba8a 0px 0px 18px;
+}
+.ball {
+  width: 40px;
+  height: 40px;
+  background: #222f3e;
+  border-radius: 50%;
+  border: 15px solid rgb(107, 161, 212);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.shut {
+  width: 150px;
+  height: 150px;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%) rotate(-45deg);
+  z-index: 999;
+}
+
+.shut span {
+  display: block;
+  width: 100%;
+  background: #fdd8b6;
+  border-radius: 0 0 60% 60%;
+  transition: 0.2s all;
+}
+.open {
+  height: 15%;
+}
+.closed {
+  height: 100%;
+}
+
+/* .right-eye:hover > .shut span {
+  height: 100%;
+} */
